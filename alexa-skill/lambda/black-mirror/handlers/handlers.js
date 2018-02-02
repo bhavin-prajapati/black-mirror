@@ -17,6 +17,21 @@ const handlers = {
     'AMAZON.YesIntent': function () {
         this.emitWithState('AMAZON.YesIntent');
     },
+    'HomeIntent': function () {
+        this.emit(':ask', this.t(keys.HOME_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'NewsIntent': function () {
+        this.emit(':ask', this.t(keys.NEWS_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'CalendarIntent': function () {
+        this.emit(':ask', this.t(keys.CALENDAR_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'WeatherIntent': function () {
+        this.emit(':ask', this.t(keys.WEATHER_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'ClockIntent': function () {
+        this.emit(':ask', this.t(keys.CLOCK_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
     HelpIntent() {
         this.emit(':ask', this.t(keys.HELP_PROMPT), this.t(keys.HELP_REPROMPT));
     },

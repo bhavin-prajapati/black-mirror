@@ -5,12 +5,17 @@ const keys = {
     HELP_PROMPT: 'HELP_PROMPT',
     HELP_REPROMPT: 'HELP_REPROMPT',
 
+    HOME_STATE: 'HOME_STATE',
+    NEWS_STATE: 'NEWS_STATE',
+    CALENDAR_STATE: 'CALENDAR_STATE',
+    WEATHER_STATE: 'WEATHER_STATE',
+    CLOCK_STATE: 'CLOCK_STATE',
+
     END_SESSION_PROMPT: 'END_SESSION_PROMPT',
   
     UNHANDLED_PROMPT: 'UNHANDLED_PROMPT',
     UNHANDLED_REPROMPT: 'UNHANDLED_REPROMPT'
   };
-  
   
   const translations = {
     en: {
@@ -20,6 +25,12 @@ const keys = {
 
         HELP_PROMPT: 'So, how can I help?',
         HELP_REPROMPT: 'Please say that again?',
+
+        HOME_STATE: 'home',
+        NEWS_STATE: 'news',
+        CALENDAR_STATE: 'calendar',
+        WEATHER_STATE: 'weather',
+        CLOCK_STATE: 'clock',
 
         END_SESSION_PROMPT: 'Goodbye!',
   

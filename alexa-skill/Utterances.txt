@@ -1,0 +1,5 @@
+HomeIntent home
+NewsIntent news
+CalendarIntent calendar
+WeatherIntent weather
+ClockIntent clock
