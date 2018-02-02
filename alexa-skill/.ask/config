@@ -1,0 +1,19 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.1d682680-7aa1-4867-a7ed-b982e6eefd8a",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-BlackMirror-default"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

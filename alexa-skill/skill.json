@@ -1,0 +1,34 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Interact with Black Mirror.",
+          "examplePhrases": [
+            "Alexa open black mirror",
+            "Alexa ask black mirror to start over",
+            "Alexa tell black mirror restart"
+          ],
+          "keywords": [
+            "black",
+            "mirror"
+          ],
+          "name": "Black Mirror",
+          "description": "Ask Black Mirror for help and information.\n\nTo start, just say \"Alexa, launch Black Mirror\" or \"Alexa, open Black Mirror\" to get started\".\n\nAt any time, you can stop by saying \"Alexa, stop\""
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "SMART_HOME",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/black-mirror"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
