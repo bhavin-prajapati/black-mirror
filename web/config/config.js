@@ -56,7 +56,7 @@ var config = {
 		{
 			module: "compliments",
 			position: "middle_center",
-			disabled: false,
+			disabled: true,
 		},
 		{
 			module: "cryptoticker",
@@ -97,8 +97,14 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			},
-			disabled: true,
+			// disabled: true,
 		},
+		{
+        module: 'MMM-Remote-Control'
+        // uncomment the following line to show the URL of the remote control on the mirror
+        // position: 'bottom_left'
+        // you can hide this module afterwards from the remote control itself
+    }
 	]
 
 };
