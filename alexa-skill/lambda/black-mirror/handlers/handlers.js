@@ -6,7 +6,10 @@ const handlers = {
     "LaunchRequest": function () {
         console.log("in LaunchRequest");
         this.response.speak("Welcome to Black Mirror. How can I help you?");
-        this.response.listen("How can I help you?");
+        fetch("http://localhost:8080/show/compliments")
+        .then((response) => {
+            console.log("show compliments");
+        });
         this.emit(':ask', this.t(keys.LAUNCH_REQUEST_PROMPT), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     'AMAZON.HelpIntent': function () {
@@ -20,9 +23,9 @@ const handlers = {
     },
     'HomeIntent': function () {
         //this.handler.state = states.HOME_MODE;
-        fetch("http://localhost:8080/show/home")
+        fetch("http://localhost:8080/show/compliments")
         .then((response) => {
-            console.log("show home");
+            console.log("show compliments");
         });
         this.emit(':ask', this.t(keys.HOME_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
@@ -44,11 +47,19 @@ const handlers = {
     },
     'WeatherIntent': function () {
         //this.handler.state = states.WEATHER_MODE;
-        fetch("http://localhost:8080/show/currentweather")
+        fetch("http://localhost:8080/show/weatherforecast")
         .then((response) => {
-            console.log("show currentweather");
+            console.log("show weatherforecast");
         });
         this.emit(':ask', this.t(keys.WEATHER_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'StocksIntent': function () {
+        //this.handler.state = states.CLOCK_MODE;
+        fetch("http://localhost:8080/show/stocks")
+        .then((response) => {
+            console.log("show stocks");
+        });
+        this.emit(':ask', this.t(keys.STOCKS_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     'ClockIntent': function () {
         //this.handler.state = states.CLOCK_MODE;

@@ -59,7 +59,7 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "8818d599903041684c2f0d8ea504f7f3"
 			},
 		},
 		{
@@ -69,7 +69,7 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "8818d599903041684c2f0d8ea504f7f3"
 			},
 		},
 		{
@@ -85,6 +85,10 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			},
+		},
+		{
+			module: "stocks",
+			position: "middle_center",
 		},
 		{
 			module: "MMM-Remote-Control"

@@ -44,6 +44,12 @@
           "samples": [
             "clock"
           ]
+        },
+        {
+          "name": "StocksIntent",
+          "samples": [
+            "stocks"
+          ]
         }
       ]
     }

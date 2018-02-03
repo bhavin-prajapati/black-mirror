@@ -127,7 +127,7 @@ module.exports = NodeHelper.create({
 				// /remote?action=HIDE&module=module_7_weatherforecast
 				var queryResults= bulkShow(self, req);
 				if (queryResults.result.length === 0 && queryResults.inverse.length === 0) {
-					res.send({"status": "error", "reason": "unknown_command", "info": "original input: " + JSON.stringify(query)});
+					res.send({"status": "error", "reason": "unknown_command", "info": "original input: " + JSON.stringify(req.param.module)});
 				} else {
 					res.send({"status": "success"});
 				}
@@ -137,7 +137,7 @@ module.exports = NodeHelper.create({
 		this.expressApp.get("/hide/:module", function (req, res) {
 			self.callAfterUpdate(function () {
 				// /remote?action=HIDE&module=module_7_weatherforecast
-				var queryResults= bulkHide(self, query, req);
+				var queryResults= bulkHide(self, req);
 				if (queryResults.result.length === 0 && queryResults.inverse.length === 0) {
 					res.send({"status": "error", "reason": "unknown_command", "info": "original input: " + JSON.stringify(query)});
 				} else {
@@ -148,12 +148,12 @@ module.exports = NodeHelper.create({
 
 		this.expressApp.get("/hideAll", function (req, res) {
 			self.callAfterUpdate(function () {
-				var queryResults= bulkHide(self, query, req);
-				if (queryResults.result.length === 0 && queryResults.inverse.length === 0) {
-					res.send({"status": "error", "reason": "unknown_command", "info": "original input: " + JSON.stringify(query)});
-				} else {
-					res.send({"status": "success"});
-				}
+				console.log("/hideAll");
+				defaultModules.forEach((moduleName) => {
+					console.log("hide", moduleName);
+					var payload = { module: moduleName, force: true};
+					self.sendSocketNotification('HIDE', payload);
+				});
 			});
 		});
 	},
@@ -935,21 +935,23 @@ module.exports = NodeHelper.create({
 function queryModules(moduleList, queryObj){
 	var queryList = [];
 	var inverseList = [];
-	moduleList.forEach(function(module){
-		var foundMoudle = false;
-		if (module && queryObj) {
-			for (var key in queryObj) {
-				if (key in module && module[key] === queryObj[key]) {
-					foundMoudle = true;
+	if(moduleList) {
+		moduleList.forEach(function(module){
+			var foundMoudle = false;
+			if (module && queryObj) {
+				for (var key in queryObj) {
+					if (key in module && module[key] === queryObj[key]) {
+						foundMoudle = true;
+					}
 				}
 			}
-		}
-		if (foundMoudle) {
-			queryList.push(module);
-		} else {
-			inverseList.push(module);
-		}
-	});
+			if (foundMoudle) {
+				queryList.push(module);
+			} else {
+				inverseList.push(module);
+			}
+		});
+	}
 	return { result: queryList, inverse: inverseList  };
 }
 function bulkShow(self, req){
