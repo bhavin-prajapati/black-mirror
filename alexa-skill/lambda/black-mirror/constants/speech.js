@@ -20,7 +20,7 @@ const keys = {
   const translations = {
     en: {
       translation: {
-        LAUNCH_REQUEST_PROMPT: 'Hi there! Welcome to Black Mirror. What would you like to view?',
+        LAUNCH_REQUEST_PROMPT: 'Hi there! Welcome to Black Mirror. How can I help you?',
         LAUNCH_REQUEST_REPROMPT: 'Please say that again?',
 
         HELP_PROMPT: 'So, how can I help?',

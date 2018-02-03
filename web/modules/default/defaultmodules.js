@@ -12,7 +12,6 @@ var defaultModules = [
 	"calendar",
 	"clock",
 	"compliments",
-	"cryptoticker",
 	"currentweather",
 	"helloworld",
 	"newsfeed",
