@@ -32,6 +32,18 @@
     },
     {
       "intent": "StocksIntent"
+    },
+    {
+      "intent": "CryptocurrencyIntent"
+    },
+    {
+      "intent": "JokesIntent"
+    },
+    {
+      "intent": "MoviesIntent"
+    },
+    {
+      "intent": "TTCScheduleIntent"
     }
   ]
 }

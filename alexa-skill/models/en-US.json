@@ -50,6 +50,30 @@
           "samples": [
             "stocks"
           ]
+        },
+        {
+          "name": "CryptocurrencyIntent",
+          "samples": [
+            "cryptocurrency"
+          ]
+        },
+        {
+          "name": "JokesIntent",
+          "samples": [
+            "jokes"
+          ]
+        },
+        {
+          "name": "MoviesIntent",
+          "samples": [
+            "movies"
+          ]
+        },
+        {
+          "name": "TTCScheduleIntent",
+          "samples": [
+            "ttc schedule"
+          ]
         }
       ]
     }
