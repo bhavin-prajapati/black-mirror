@@ -57,8 +57,8 @@ var config = {
 			module: "currentweather",
 			position: "middle_center",
 			config: {
-				location: "New York",
-				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
+				location: "Toronto",
+				locationID: "6167865",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "8818d599903041684c2f0d8ea504f7f3"
 			},
 		},
@@ -67,8 +67,8 @@ var config = {
 			position: "middle_center",
 			header: "Weather Forecast",
 			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
+				location: "Toronto",
+				locationID: "6167865",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "8818d599903041684c2f0d8ea504f7f3"
 			},
 		},
@@ -78,8 +78,8 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "CBC News",
+						url: "http://rss.cbc.ca/lineup/topstories.xml"
 					}
 				],
 				showSourceTitle: true,
