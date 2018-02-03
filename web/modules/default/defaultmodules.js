@@ -10,6 +10,7 @@
 var defaultModules = [
 	"alert",
 	"calendar",
+	"cryptocurrency",
 	"clock",
 	"compliments",
 	"currentweather",

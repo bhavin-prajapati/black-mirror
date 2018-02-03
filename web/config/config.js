@@ -37,6 +37,10 @@ var config = {
 			position: "middle_center",
 		},
 		{
+			module: "cryptocurrency",
+			position: "middle_center",
+		},
+		{
 			module: "calendar",
 			header: "US Holidays",
 			position: "middle_center",
