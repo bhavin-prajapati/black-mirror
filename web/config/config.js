@@ -95,6 +95,10 @@ var config = {
 			position: "middle_center",
 		},
 		{
+			module: "movies",
+			position: "middle_center",
+		},
+		{
 			module: "MMM-Remote-Control"
 		},
 	]

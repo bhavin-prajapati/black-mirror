@@ -14,6 +14,7 @@ var defaultModules = [
 	"compliments",
 	"currentweather",
 	"helloworld",
+	"movies",
 	"newsfeed",
 	"stocks",
 	"weatherforecast",
