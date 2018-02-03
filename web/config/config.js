@@ -27,22 +27,19 @@ var config = {
 	modules: [
 		{
 			module: "alert",
-			disabled: true,
 		},
 		{
 			module: "updatenotification",
-			position: "top_bar",
-			disabled: true,
+			position: "middle_center",
 		},
 		{
 			module: "clock",
-			position: "top_left",
-			disabled: true,
+			position: "middle_center",
 		},
 		{
 			module: "calendar",
 			header: "US Holidays",
-			position: "top_left",
+			position: "middle_center",
 			config: {
 				calendars: [
 					{
@@ -51,42 +48,33 @@ var config = {
 					}
 				]
 			},
-			disabled: true,
 		},
 		{
 			module: "compliments",
 			position: "middle_center",
-			disabled: false,
-		},
-		{
-			module: "cryptoticker",
-			position: "bottom_bar",
-			disabled: true,
 		},
 		{
 			module: "currentweather",
-			position: "top_right",
+			position: "middle_center",
 			config: {
 				location: "New York",
 				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			},
-			disabled: true,
 		},
 		{
 			module: "weatherforecast",
-			position: "top_right",
+			position: "middle_center",
 			header: "Weather Forecast",
 			config: {
 				location: "New York",
 				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			},
-			disabled: true,
 		},
 		{
 			module: "newsfeed",
-			position: "top_bar",
+			position: "middle_center",
 			config: {
 				feeds: [
 					{
@@ -97,7 +85,9 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			},
-			disabled: true,
+		},
+		{
+			module: "MMM-Remote-Control"
 		},
 	]
 

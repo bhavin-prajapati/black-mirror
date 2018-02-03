@@ -20,7 +20,7 @@ const handlers = {
     },
     'HomeIntent': function () {
         //this.handler.state = states.HOME_MODE;
-        fetch("http://localhost:3000/show/home")
+        fetch("http://localhost:8080/show/home")
         .then((response) => {
             console.log("show home");
         });
@@ -28,7 +28,7 @@ const handlers = {
     },
     'NewsIntent': function () {
         //this.handler.state = states.NEWS_MODE;
-        fetch("http://localhost:3000/show/newsfeed")
+        fetch("http://localhost:8080/show/newsfeed")
         .then((response) => {
             console.log("show newsfeed");
         });
@@ -36,7 +36,7 @@ const handlers = {
     },
     'CalendarIntent': function () {
         //this.handler.state = states.CALENDAR_MODE;
-        fetch("http://localhost:3000/show/calendar")
+        fetch("http://localhost:8080/show/calendar")
         .then((response) => {
             console.log("show calendar");
         });
@@ -44,7 +44,7 @@ const handlers = {
     },
     'WeatherIntent': function () {
         //this.handler.state = states.WEATHER_MODE;
-        fetch("http://localhost:3000/show/currentweather")
+        fetch("http://localhost:8080/show/currentweather")
         .then((response) => {
             console.log("show currentweather");
         });
@@ -52,7 +52,7 @@ const handlers = {
     },
     'ClockIntent': function () {
         //this.handler.state = states.CLOCK_MODE;
-        fetch("http://localhost:3000/show/clock")
+        fetch("http://localhost:8080/show/clock")
         .then((response) => {
             console.log("show clock");
         });
