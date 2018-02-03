@@ -69,9 +69,10 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "21b42c2cf372b4a861c3d8e8f2f0ef88"
 			},
 			disabled: true,
+			disabled: false,
 		},
 		{
 			module: "weatherforecast",
@@ -80,9 +81,10 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "21b42c2cf372b4a861c3d8e8f2f0ef88"
 			},
 			disabled: true,
+			disabled: false,
 		},
 		{
 			module: "newsfeed",
@@ -100,11 +102,11 @@ var config = {
 			// disabled: true,
 		},
 		{
-        module: 'MMM-Remote-Control'
-        // uncomment the following line to show the URL of the remote control on the mirror
-        // position: 'bottom_left'
-        // you can hide this module afterwards from the remote control itself
-    }
+			module: "MMM-Remote-Control",
+			// uncomment the following line to show the URL of the remote control on the mirror
+			position: "bottom_left"
+			// you can hide this module afterwards from the remote control itself
+		}
 	]
 
 };

@@ -119,14 +119,14 @@ if (["localhost", "127.0.0.1", "::1", "::ffff:127.0.0.1", undefined].indexOf(con
 }
 
 // Express Server
-expressApp.get("/show/:module", (req, res) => {
-	var response = core.show(req.params.module);
-	res.send(response);
-});
-
-expressApp.get("/hide/:module", (req, res) => {
-	var response = core.hide(req.params.module);
-	res.send(response);
-});
+// expressApp.get("/show/:module", (req, res) => {
+// 	var response = core.show(req.params.module);
+// 	res.send(response);
+// });
+//
+// expressApp.get("/hide/:module", (req, res) => {
+// 	var response = core.hide(req.params.module);
+// 	res.send(response);
+// });
 
 expressApp.listen(3000, () => console.log("Example app listening on port 3000!"))

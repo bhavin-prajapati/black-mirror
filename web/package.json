@@ -4,6 +4,8 @@
   "description": "The open source modular smart mirror platform.",
   "main": "js/electron.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "start": "sh run-start.sh",
     "install": "cd vendor && npm install",
     "install-fonts": "cd fonts && npm install",
@@ -33,6 +35,7 @@
   },
   "homepage": "https://magicmirror.builders",
   "devDependencies": {
+    "@ljharb/eslint-config": "^12.2.1",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "current-week-number": "^1.0.7",
