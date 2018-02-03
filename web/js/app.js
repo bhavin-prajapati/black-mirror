@@ -217,9 +217,6 @@ var App = function() {
 			loadModules(modules, function() {
 				var server = new Server(config, function(app, io) {
 					console.log("Server started ...");
-
-					console.log("config", config);
-
 					for (var h in nodeHelpers) {
 						var nodeHelper = nodeHelpers[h];
 						nodeHelper.setExpressApp(app);
@@ -228,7 +225,6 @@ var App = function() {
 					}
 
 					console.log("Sockets connected & modules started ...");
-
 					if (typeof callback === "function") {
 						callback(config);
 					}
@@ -256,9 +252,9 @@ var App = function() {
 	 * This method shows the module in the app.
 	 */
 	this.show = function(moduleName) {
+		console.log('show ', moduleName);
 		for (var m in config.modules) {
 			var module = config.modules[m];
-			MM.showModule(module, module.speed);
 			if (module.module === moduleName) {
 				config.modules[m].disabled = false;
 			}
@@ -273,9 +269,9 @@ var App = function() {
 	 * This method hides the module in the app.
 	 */
 	this.hide = function(moduleName) {
+		console.log('show ', moduleName);
 		for (var m in config.modules) {
 			var module = config.modules[m];
-			MM.hideModule(module, module.speed);
 			if (module.module === moduleName) {
 				config.modules[m].disabled = true;
 			}
