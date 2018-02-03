@@ -37,6 +37,10 @@ var config = {
 			position: "middle_center",
 		},
 		{
+			module: "cryptocurrency",
+			position: "middle_center",
+		},
+		{
 			module: "calendar",
 			header: "US Holidays",
 			position: "middle_center",
@@ -88,6 +92,18 @@ var config = {
 		},
 		{
 			module: "stocks",
+			position: "middle_center",
+		},
+		{
+			module: "ttcschedule",
+			position: "middle_center",
+		},
+		{
+			module: "movies",
+			position: "middle_center",
+		},
+		{
+			module: "jokes",
 			position: "middle_center",
 		},
 		{

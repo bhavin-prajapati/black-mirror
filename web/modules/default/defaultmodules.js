@@ -10,14 +10,18 @@
 var defaultModules = [
 	"alert",
 	"calendar",
+	"cryptocurrency",
 	"clock",
 	"compliments",
 	"currentweather",
 	"helloworld",
+	"jokes",
+	"movies",
 	"newsfeed",
 	"stocks",
 	"weatherforecast",
-	"updatenotification"
+	"updatenotification",
+	"ttcschedule"
 ];
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/

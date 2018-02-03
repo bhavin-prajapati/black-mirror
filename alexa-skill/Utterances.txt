@@ -4,3 +4,7 @@ CalendarIntent calendar
 WeatherIntent weather
 ClockIntent clock
 StocksIntent stocks
+CryptocurrencyIntent cryptocurrency
+JokesIntent jokes
+MoviesIntent movies
+TTCScheduleIntent ttc schedule

@@ -45,6 +45,38 @@ const handlers = {
         });
         this.emit(':ask', this.t(keys.CALENDAR_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
+    'CryptocurrencyIntent': function () {
+        //this.handler.state = states.CALENDAR_MODE;
+        fetch("http://localhost:8080/show/cryptocurrency")
+        .then((response) => {
+            console.log("show cryptocurrency");
+        });
+        this.emit(':ask', this.t(keys.CRYPTOCURRENCY_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'JokesIntent': function () {
+        //this.handler.state = states.CALENDAR_MODE;
+        fetch("http://localhost:8080/show/jokes")
+        .then((response) => {
+            console.log("show jokes");
+        });
+        this.emit(':ask', this.t(keys.JOKES_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'MoviesIntent': function () {
+        //this.handler.state = states.CALENDAR_MODE;
+        fetch("http://localhost:8080/show/movies")
+        .then((response) => {
+            console.log("show movies");
+        });
+        this.emit(':ask', this.t(keys.MOVIES_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'TTCScheduleIntent': function () {
+        //this.handler.state = states.CALENDAR_MODE;
+        fetch("http://localhost:8080/show/ttcschedule")
+        .then((response) => {
+            console.log("show ttcschedule");
+        });
+        this.emit(':ask', this.t(keys.TTCSCHEDULE_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
     'WeatherIntent': function () {
         //this.handler.state = states.WEATHER_MODE;
         fetch("http://localhost:8080/show/weatherforecast")
