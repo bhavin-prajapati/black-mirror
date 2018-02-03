@@ -99,6 +99,10 @@ var config = {
 			position: "middle_center",
 		},
 		{
+			module: "jokes",
+			position: "middle_center",
+		},
+		{
 			module: "MMM-Remote-Control"
 		},
 	]
