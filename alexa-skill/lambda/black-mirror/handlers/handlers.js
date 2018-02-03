@@ -19,27 +19,43 @@ const handlers = {
         this.emitWithState('AMAZON.YesIntent');
     },
     'HomeIntent': function () {
-        this.handler.state = states.HOME_MODE;
+        //this.handler.state = states.HOME_MODE;
         fetch("http://localhost:3000/show/home")
         .then((response) => {
-            console.log("home", response);
+            console.log("show home");
         });
         this.emit(':ask', this.t(keys.HOME_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     'NewsIntent': function () {
-        this.handler.state = states.NEWS_MODE;
+        //this.handler.state = states.NEWS_MODE;
+        fetch("http://localhost:3000/show/newsfeed")
+        .then((response) => {
+            console.log("show newsfeed");
+        });
         this.emit(':ask', this.t(keys.NEWS_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     'CalendarIntent': function () {
-        this.handler.state = states.CALENDAR_MODE;
+        //this.handler.state = states.CALENDAR_MODE;
+        fetch("http://localhost:3000/show/calendar")
+        .then((response) => {
+            console.log("show calendar");
+        });
         this.emit(':ask', this.t(keys.CALENDAR_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     'WeatherIntent': function () {
-        this.handler.state = states.WEATHER_MODE;
+        //this.handler.state = states.WEATHER_MODE;
+        fetch("http://localhost:3000/show/currentweather")
+        .then((response) => {
+            console.log("show currentweather");
+        });
         this.emit(':ask', this.t(keys.WEATHER_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     'ClockIntent': function () {
-        this.handler.state = states.CLOCK_MODE;
+        //this.handler.state = states.CLOCK_MODE;
+        fetch("http://localhost:3000/show/clock")
+        .then((response) => {
+            console.log("show clock");
+        });
         this.emit(':ask', this.t(keys.CLOCK_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     HelpIntent() {
