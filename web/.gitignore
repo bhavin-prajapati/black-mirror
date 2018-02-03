@@ -63,6 +63,8 @@ Temporary Items
 # Ignore all modules except the default modules.
 /modules/**
 !/modules/MMM-Remote-Control
+!/modules/MMM-Remote-Control/**
+/modules/MMM-Remote-Control/node_modules
 !/modules/default
 !/modules/default/**
 !/modules/node_modules
