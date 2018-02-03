@@ -91,6 +91,10 @@ var config = {
 			position: "middle_center",
 		},
 		{
+			module: "ttcschedule",
+			position: "middle_center",
+		},
+		{
 			module: "MMM-Remote-Control"
 		},
 	]
