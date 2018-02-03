@@ -120,13 +120,11 @@ if (["localhost", "127.0.0.1", "::1", "::ffff:127.0.0.1", undefined].indexOf(con
 
 // Express Server
 expressApp.get("/show/:module", (req, res) => {
-	console.log("Show " + req.params.module);
 	var response = core.show(req.params.module);
 	res.send(response);
 });
 
 expressApp.get("/hide/:module", (req, res) => {
-	console.log("Hide " + req.params.module);
 	var response = core.hide(req.params.module);
 	res.send(response);
 });
