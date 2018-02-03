@@ -145,17 +145,6 @@ module.exports = NodeHelper.create({
 				}
 			});
 		});
-
-		this.expressApp.get("/hideAll", function (req, res) {
-			self.callAfterUpdate(function () {
-				var queryResults= bulkHide(self, query, req);
-				if (queryResults.result.length === 0 && queryResults.inverse.length === 0) {
-					res.send({"status": "error", "reason": "unknown_command", "info": "original input: " + JSON.stringify(query)});
-				} else {
-					res.send({"status": "success"});
-				}
-			});
-		});
 	},
 
 	capitalizeFirst: function(string) {

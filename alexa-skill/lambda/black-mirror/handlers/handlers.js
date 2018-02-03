@@ -44,11 +44,19 @@ const handlers = {
     },
     'WeatherIntent': function () {
         //this.handler.state = states.WEATHER_MODE;
-        fetch("http://localhost:8080/show/currentweather")
+        fetch("http://localhost:8080/show/weatherforecast")
         .then((response) => {
-            console.log("show currentweather");
+            console.log("show weatherforecast");
         });
         this.emit(':ask', this.t(keys.WEATHER_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
+    },
+    'StocksIntent': function () {
+        //this.handler.state = states.CLOCK_MODE;
+        fetch("http://localhost:8080/show/stocks")
+        .then((response) => {
+            console.log("show stocks");
+        });
+        this.emit(':ask', this.t(keys.STOCKS_STATE), this.t(keys.LAUNCH_REQUEST_REPROMPT));
     },
     'ClockIntent': function () {
         //this.handler.state = states.CLOCK_MODE;

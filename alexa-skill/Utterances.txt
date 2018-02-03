@@ -3,3 +3,4 @@ NewsIntent news
 CalendarIntent calendar
 WeatherIntent weather
 ClockIntent clock
+StocksIntent stocks

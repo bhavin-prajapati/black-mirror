@@ -16,6 +16,7 @@ var defaultModules = [
 	"currentweather",
 	"helloworld",
 	"newsfeed",
+	"stocks",
 	"weatherforecast",
 	"updatenotification"
 ];

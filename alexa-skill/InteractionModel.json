@@ -29,6 +29,9 @@
     },
     {
       "intent": "ClockIntent"
+    },
+    {
+      "intent": "StocksIntent"
     }
   ]
 }

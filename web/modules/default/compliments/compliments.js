@@ -12,22 +12,16 @@ Module.register("compliments", {
 	defaults: {
 		compliments: {
 			anytime: [
-				"Hey there sexy!"
+				"Welcome to Black Mirror. How can I help you?"
 			],
 			morning: [
-				"Good morning, handsome!",
-				"Enjoy your day!",
-				"How was your sleep?"
+				"Welcome to Black Mirror. How can I help you?"
 			],
 			afternoon: [
-				"Hello, beauty!",
-				"You look sexy!",
-				"Looking good today!"
+				"Welcome to Black Mirror. How can I help you?"
 			],
 			evening: [
-				"Wow, you look hot!",
-				"You look nice!",
-				"Hi, sexy!"
+				"Welcome to Black Mirror. How can I help you?"
 			]
 		},
 		updateInterval: 30000,
@@ -152,7 +146,7 @@ Module.register("compliments", {
 
 		var compliment = document.createTextNode(complimentText);
 		var wrapper = document.createElement("div");
-		wrapper.className = this.config.classes ? this.config.classes : "thin xlarge bright";
+		wrapper.className = this.config.classes ? this.config.classes : "thin large bright";
 		wrapper.appendChild(compliment);
 
 		return wrapper;
